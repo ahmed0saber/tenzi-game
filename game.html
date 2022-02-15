@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play | Tenzi Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Roll until all boxes are the same. Click on any box to freeze.</h2>
+        </div>
+        <div class="dices">
+            <div class="box active" onclick="toggle('0')"></div>
+            <div class="box active" onclick="toggle('1')"></div>
+            <div class="box active" onclick="toggle('2')"></div>
+            <div class="box active" onclick="toggle('3')"></div>
+            <div class="box active" onclick="toggle('4')"></div>
+            <div class="box active" onclick="toggle('5')"></div>
+        </div>
+        <div class="btn-con">
+            <a href="./index.html">Back</a>
+            <button onclick="restart()">Restart</button>
+            <button onclick="roll()">Roll</button>
+        </div>
+    </div>
+    <div class="alert">
+        <p>Congratulations, you win !</p>
+        <button onclick="exit()">Close</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
